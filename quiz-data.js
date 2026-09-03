@@ -17,8 +17,7 @@ const quizData = [
     { question: "トランザクションのACID特性のうち、Consistencyの説明として正しい記述はどれですか。", answers: ["トランザクションの実行前後でデータベースの整合性が保たれる", "トランザクションの処理が他のトランザクションの処理に影響を与えたり、受けたりしない", "トランザクションのコミットにより変更された内容が確実に保存される", "トランザクションは完全に実行されるか、全く実行されないかのどちらかとなる"], correct: 0 },
     { question: "トランザクションのACID特性のうち、Atomicityの説明として正しい記述はどれですか。", answers: ["トランザクションのコミットにより変更された内容が確実に保存される", "トランザクションの実行前後でデータベースの整合性が保たれる", "トランザクションの処理が他のトランザクションの処理に影響を与えたり、受けたりしない", "トランザクションは完全に実行されるか、全く実行されないかのどちらかとなる"], correct: 3 },
     { question: "ER図(ERD: Entity Relationship Diagram)の説明として正しい記述はどれですか。", answers: ["リレーショナル・データベースの表をアトリビュートと呼ぶ", "リレーションシップ間の関係をエンティティという線で結ぶ", "カーディナリティで「1対1」「1対多」「多対多」のような関係を表すことができる", "リレーショナル・データベースの列をカーディナリティと呼ぶ"], correct: 2 },
-    { question: "次のSELECT文を実行するとエラーとなります。エラーの原因はいくつありますか。 \n SELECT employee_id ID, employee_name 20EMPNAME, hiredate DATE
-　FROM employees;", answers: ["2つ", "3つ", "4つ", "1つ"], correct: 0 },
+    { question: "次のSELECT文を実行するとエラーとなります。エラーの原因はいくつありますか。 \n SELECT employee_id ID, employee_name 20EMPNAME, hiredate DATE FROM employees;", answers: ["2つ", "3つ", "4つ", "1つ"], correct: 0 },
     { question: "リレーショナル・データベース(RDB)モデルに関して、正しくない記述はどれですか", answers: ["データをツリー構造で階層型に格納する", "複数の表をデータで関連付けることができる", "SQLを使用してデータにアクセスする", "データを行と列からなる2次元の表形式で格納する"], correct: 0 },
     { question: "ERモデルの構成要素に当てはまらないものはどれですか", answers: ["リレーションシップ", "リレーショナル・データベース", "アトリビュート", "エンティティ"], correct: 1 },
     { question: "重複行を排除した検索結果を表示させるためには、どの問い合わせを実行しますか。", answers: ["SELECT DISTINCT (prod_id, cust_id) FROM sales;", "SELECT DISTINCT prod_id, cust_id FROM sales;", "SELECT DISTINCT(*) FROM sales;", "SELECT DISTINCT prod_id, DISTINCT cust_id FROM sales;"], correct: 1 },
